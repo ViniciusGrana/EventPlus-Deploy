@@ -13,11 +13,11 @@ export const eventsResource = '/Evento';
 /**
  * Rota para o recurso Listar Minhas Presenças
  */
-export const myEventsResource = '/PresencasEvento/ListarMinhas';
+export const myEventsResource = '/Presencas/ListarMinhas';
 /**
  * Rota para o recurso Presenças Evento
  */
-export const presencesEventResource = '/PresencasEvento';
+export const presencesEventResource = '/Presencas';
 /**
  * Rota para o recurso Presenças Evento
  */
@@ -41,12 +41,12 @@ export const institutionResource = '/Instituicao';
 export const loginResource = '/Login';
 
 const apiPort = '5000';
-const localApiUri = `http://localhost:${apiPort}/api`;
-const externallApiUri = ``;
+// const localApiUri = `https://eventplusweapi-vinicius.azurewebsites.net/api`;
+const externallApiUri = `https://eventplusweapi-vinicius.azurewebsites.net/api`;
 // const externalApiUri = null;
 
 const api = axios.create({
-    baseURL: localApiUri
+    baseURL: externallApiUri
 });
 
 

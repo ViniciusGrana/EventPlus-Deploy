@@ -28,7 +28,7 @@ const Table = ({ dados, fnConnect = null, fnShowModal = null }) => {
       <tbody>
         {dados.map((e) => {
           return (
-            <tr className="tbal-data__head-row" key={Math.random()}>
+            <tr className="tbal-data__head-row" key={e.idEvento}>
               <td className="tbal-data__data tbal-data__data--big">
                 {e.nomeEvento}
               </td>
